@@ -1,0 +1,208 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output. 
+#
+
+sidebar:
+    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Sashwat K
+    tagline: FOSS Developer
+    avatar: sashwat.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: sashwat0001@gmail.com
+    phone: +91 8281962557
+    website: sashwat.in #do not add http://
+    linkedin: sashwat-k-25b30a11b
+    github: sashuu6
+    gitlab:
+    bitbucket:
+    twitter: '@blackisashu'
+    stack-overflow: 8813208/user # Number/Username, e.g. 123456/alandoe
+    codewars:
+
+    languages:
+      - idiom: English
+        level: Professional
+
+      - idiom: Hindi
+        level: Native
+
+      - idiom: Malayalam
+        level: Native
+        
+    interests:
+      - item: Development
+        link:
+
+      - item: Gaming
+        link:
+      
+      - item: Music
+        link:
+
+      - item: Photography
+        link:
+
+      - item: Travelling
+        link:
+
+      - item: Touring
+        link:
+
+career-profile:
+    title: Career Profile
+    summary: |
+      SI am a NERD and a linux enthusiast, having an average knowledge on working of linux 
+      and their distributions. I am also a huge enthusiast in hardware programming. 
+      Implementing my software on a hardware gives me an immense satisfaction on my work. 
+      I was really interested in electronics since my childhood and was really determined 
+      to get into applied electronics engineering. But, my low score in 12th shattered my 
+      dream. Then I got into Christ Nagar College for my Bachelor in Computer Applications 
+      [BCA]. Things started looking up. After my BCA, I got into College of Engineering 
+      Trivandrum for my Masters in Computer Applications [MCA]. My masters drgree opened me 
+      to a large bandwidth of oppurtunies to continue on my dream. My hobbies include 
+      working on hardware and art.
+
+education:
+    - degree: Masters in Computer Applications
+      university: College of Engineering Trivandrum
+      time: 2017 - 2020
+      details: |
+        This college is affliliated under KTU University. This college gave a different 
+        level exposure to new oppurtunies. In this college I met the person who changed 
+        my programming life, Mr Aswin Karuvally. He showed me the importance of linux 
+        and its working. He also introduced me to IOT devices which included arduino 
+        uno, raspberry pi, beaglebone etc. With the immense support my HOD Prof. 
+        John Prakash, I could complete many projects which includes both hardware and 
+        software.
+
+    - degree: Bachlor in Computer Applications
+      university: Christ Nagar College Maranalloor
+      time: 2014 - 2017
+      details: |
+        This college is affliliated under Kerala University. I learned many programming 
+        languages in this degree. The languages include C,C++ (with data structures), 
+        JAVA, Visual Basic, SQL, PHP, HTML and CSS. This helped me along with android 
+        development (which I learned via internet) to develop my final project. My final 
+        Project was an android application which could be used as to dynamically remap ECU 
+        using raspberry pi.
+    
+    - degree: Computer Science
+      university: Kendriya Vidyalaya A.F.S Akkulam
+      time: 2012 - 2014
+      details: |
+        I took my high school education from Kendriya Vidyalaya A.F.S Akkulam and took 
+        Computer science stream (Physics, Chemistry, Computer science). This school is 
+        affiliated under CBSE syllabus. Studying in this school gave a great base in 
+        electronics and computer science. I learned basics of electronics like breadboard 
+        design, PCB designing, soldering etc under great guidence of my teacher, 
+        Mr Sabarigirishan. I learned basics of C++ under Mr Chandrakanth Chavda. I learned 
+        HTML via the internet.
+
+experiences:
+    - role: Co-Founder
+      time: 2015 - 2016
+      company: Radsys Global PVT LTD
+      details: |
+        This was my first startup. This startup was found by me and my friend (now enemy). 
+        First I made websites for others under this company's name. Then, we moved into 
+        proof-reading of documents for a company. This gave us a decent income till my 
+        friend flew away with the revenue. The best part was that, I was the person who 
+        put the money in it. The second best part was that I was using my college semester 
+        fee. The ultimate part is that, the company we were taking contracts was a fraudulant
+         company. This situation taught me, not to trust anybody.
+
+    - role: Co-Founder
+      time: 2016 - 2017
+      company: Orb Studios PVT LTD
+      details: |
+        This startup was started to earn back the losses that I got from my previous 
+        venture. This was started by me and my college besties, Visal and Advaith. 
+        We did websites for other companies and a consultant for tech issues. This 
+        startup had to be stopped because I got in CET and I got into hostel.
+
+    - role: Lead Developer
+      time: 2017 - 2020
+      company: Company MCA
+      details: |
+        This is a startup which was introduced by our department to experience a company 
+        atmosphere and create commercial applications for government firms. The projects 
+        included websites, hardwares etc.This startup helped me create better commercial 
+        softwares.
+    - role: Student Faculty
+      time: 2017 - 2020
+      company: IOT Lab, CET
+      details: |
+        This lab educates the students on IOT devices and their implementation using 
+        micro-controllers and SoC(s). The devices include arduino, raspberry pi etc. 
+        This is run by Prof. Joaquim I.
+
+# projects:
+#     title: Projects
+#     intro: >
+#       You can list your side projects or open source libraries in this
+#       section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+#       Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+
+#     assignments:
+#       - title: Velocity
+#         link: "#hook"
+#         tagline: "A responsive website template designed to help startups promote, market and sell their products."
+
+#       - title: DevStudio
+#         link: "#"
+#         tagline: "A responsive website template designed to help web developers/designers market their services."
+
+#       - title: Tempo
+#         link: "#"
+#         tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+#       - title: Atom
+#         link: "#"
+#         tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+
+#       - title: Delta
+#         link: "#"
+#         tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+
+# publications:
+#     title: Publications
+#     intro: |
+#       You can list your publications in this section. Lorem ipsum dolor sit
+#       amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+#       bibendum fringilla a eu lectus.
+
+#     papers:
+#       - title: The Art of Computer Programming
+#         authors: Donald E. Knuth
+#         conference: Addison-Wesley, 1968
+
+#       - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+#         authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+#         conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+
+#       - title: A syntax directed compiler for Algol 60
+#         authors: Edgar T. Irons
+#         conference: "Comm. ACM 4 (1961), 51–55"
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: C
+        level: 80%
+
+      - name: JAVA
+        level: 78%
+
+      - name: Python
+        level: 60%
+
+      - name: Bash Script
+        level: 70%
+
+footer: >
+    Powered by <i class="fas fa-jekyll"></i> by <a href="" target="_blank" rel="nofollow">Jekyll</a>
