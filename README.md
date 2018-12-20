@@ -1,2 +1,4 @@
 # Curriculum-Vitae
-This is the CV is made using Latex. Previously Jekyll.
+This repository contains my CV. This CV is generated using LaTex. The tex file is properly documented and developed in a developer friendly way.
+
+![CV](/docs/cv.png)
