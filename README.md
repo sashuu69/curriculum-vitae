@@ -1,4 +1,4 @@
 # Curriculum-Vitae
-This repository contains my CV. This CV is generated using LaTex. The tex file is properly documented and developed in a developer friendly way.
+This repository contains my CV. This CV is generated using LaTex. The tex file is properly documented and developed in a developer friendly way. You can view the CV at [this link](https://sashuu6.github.io/Curriculum-Vitae/)
 
 ![CV](/docs/cv.png)
