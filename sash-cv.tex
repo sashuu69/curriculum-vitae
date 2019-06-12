@@ -15,33 +15,43 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{} 
+
+%-------------------------
+% clear all header and footer fields
+%-------------------------
+
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
+%-------------------------
 % Adjust margins
+%-------------------------
+
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
-
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+%-------------------------
 % Sections formatting
+%-------------------------
+
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
+%-------------------------
+
 \newcommand{\resumeItem}[2]{
   \item\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
@@ -57,15 +67,13 @@
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-
 \renewcommand{\labelitemii}{$\circ$}
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
+
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -76,7 +84,6 @@
   \textbf{\href{https://sashuu6.github.io/}{\Large Sashwat K}} & Email : \href{mailto:sashwat0001@gmail.com}{sashwat0001@gmail.com}\\
   \href{https://sashuu6.github.io/}{https://sashuu6.github.io} & Mobile : +91 8281962557 \\
 \end{tabular*}
-
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -92,11 +99,9 @@
       {High School; Computer Science}{April. 2012 -- March. 2014}
   \resumeSubHeadingListEnd
 
-
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
-
     \resumeSubheading
       {IoT Lab}{CET, Thiruvananthapuram}
       {Student faculty}{2017 - Present}
@@ -106,7 +111,6 @@
         \resumeItem{Raspberry Pi}
           {The Raspberry Pi is a tiny and affordable computer that you can use to learn programming through fun, practical projects. I took workshops on Raspberry Pi.}
       \resumeItemListEnd
-
     \resumeSubheading
       {Appfabs PVT LTD}{Thiruvananthapuram, India}
       {Intern}{May 2018 - September 2018}
@@ -115,7 +119,6 @@
           {Cybersecurity is the protection of internet-connected systems, including hardware, software and data, from cyberattacks. In a computing context, security comprises cybersecurity and physical security -- both are used by enterprises to protect against unauthorized access to data centers and other computerized systems.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
-
 
 %-----------PROJECTS-----------------
 \section{Projects}
@@ -130,16 +133,15 @@
       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
   \resumeSubHeadingListEnd
 
-
 %--------PROGRAMMING SKILLS------------
-%\section{Programming Skills}
-%  \resumeSubHeadingListStart
-%    \item{
-%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
-%      \hfill
-%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-%    }
-%  \resumeSubHeadingListEnd
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Embedded C, Python, Bash Script}
+      \hfill
+      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+    }
+  \resumeSubHeadingListEnd
 
 
 %-------------------------------------------
