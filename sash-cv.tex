@@ -1,9 +1,12 @@
-%-------------------------
-% Resume in Latex
+%------------------------
+% Sashwat's CV
 % Author : Sashwat K
+% Github : https://sashuu6.github.io/curriculum-vitae
+% License : GPL
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[a4paper,20pt]{article}
+
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -11,216 +14,214 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
+\usepackage{verbatim} 
+
 \pagestyle{fancy}
-\fancyhf{} 
-
-%-------------------------
-% clear all header and footer fields
-%-------------------------
-
+\fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-%-------------------------
 % Adjust margins
-%-------------------------
-
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
+%---------------
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-\urlstyle{same}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-%-------------------------
 % Sections formatting
-%-------------------------
+%--------------------
+\titleformat{\section}{
+	\vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
-\titleformat{\section} {
-	\vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-%-------------------------
 % Custom commands
-%-------------------------
-
+%----------------
 \newcommand{\resumeItem}[2]{
 	\item\small{
-    		\textbf{#1}{: #2 \vspace{-2pt}}
-  	}
+		\textbf{#1}{: #2 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+	\item\small{
+		{\vspace{-2pt}}
+	}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  	\vspace{-1pt}\item
-    	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      		\textbf{#1} & #2 \\
-      		\textit{\small#3} & \textit{\small #4} \\
-    	\end{tabular*}\vspace{-5pt}
+	\vspace{-1pt}\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{#1} & #2 \\
+	\textit{#3} & \textit{#4} \\
+	\end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
 \renewcommand{\labelitemii}{$\circ$}
+
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
 
 \begin{document}
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  	\textbf{\href{https://sashwat.in/}{\Large Sashwat K}} & Email : \href{mailto:hi@sashwat.in}{hi@sashwat.in}\\
-  	\href{https://sashwat.in/}{sashwat.in}& Mobile : +91 8281962557 \\
+	\textbf{{\LARGE Sashwat K}} & Email: \href{mailto:}{hi@sashwat.in}\\
+	\href{https://sashwat.in}{Portfolio: sashwat.in} & Mobile:~~~+91-828-1962-557 \\
+	 \href{https://github.com/sashuu6}{Github: ~~github.com/sashuu6} \\
 \end{tabular*}
 
-%-----------EXPERIENCE-----------------
+%-----------Experience-----------------
 \section{Experience}
-  	\resumeSubHeadingListStart
-	\resumeSubheading
-      		{Xilinx, Inc}{Hyderabad, India}
-      		{CAD Engineer}{June 2020 - Present}
-    	\resumeSubheading
-      		{Appfabs PVT LTD}{Technopark, Thiruvananthapuram, India}
-      		{Intern}{May 2018 - September 2018}
-	\resumeSubheading
-      		{IoT Lab}{CET, Thiruvananthapuram}
-      		{Student faculty}{September 2017 - April 2018 \& October2018 - January 2019}
-  	\resumeSubHeadingListEnd
+	\resumeSubHeadingListStart
+		\resumeSubheading
+			{AMD Inc.}{Hybrid}
+			{Silicon Design Engineer (Full Time)}{Feb 2022 - Present}
+			\resumeItemListStart
+				\resumeItem
+					{AMD - Xilinx Integration}
+					{Help update infrastructure to help bring synergy between AMD and Xilinx systems Revision Control System, License Servers etc.}
+				\resumeItem
+					{Programming}
+					{Developed and maintain scripts for maintaining ICManage servers (users, workspaces etc), FlexLM license files, benchmarking new servers}
+				\resumeItem
+					{Collaboration}
+					{Delegate with Silicon Engineering teams and IT to complete projects.}
+			\resumeItemListEnd
+
+		\vspace{+5pt}
+		\resumeSubheading
+			{Xilinx Inc.}{Hybdrid}
+			{CAD Engineer (Full Time)}{Jul 2021 -  Feb 2022}
+			\resumeItemListStart
+				\resumeItem
+					{Management}
+					{Implement policies for LSF queues and Storage.}
+				\resumeItem
+					{Programming}
+					{Develop and maintain ICManage Library creation.}
+				\resumeItem
+					{Documentation}
+					{Create, update and document processes using Jira and Confluence.}
+		\resumeItemListEnd
+		
+		\vspace{+5pt}
+		\resumeSubheading
+			{Xilinx Inc.}{Hybdrid}
+			{CAD Infrastructure DevOps Engineer (Contactual)}{Jun 2020 -  Jul 2021}
+			\resumeItemListStart
+				\resumeItem
+					{Programming}
+					{Developed and maintain script to maintain server netgroup files of hosts in LSF clusters.}
+				\resumeItem
+					{Maintanence}
+					{Maintain ICManage GDP, LSF application profiles, LSF License Scheduler and EDA tools.}
+		\resumeItemListEnd
+	\resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
+\vspace{-5pt}
 \section{Education}
-  	\resumeSubHeadingListStart
+	\resumeSubHeadingListStart
+		\resumeSubheading
+			{College of Engineering Trivandrum}{Thiruvananthapuram, India}
+			{Post Graduation - Bachelor in Computer Applications;  GPA: 7.0}{August. 2017 - April. 2020}
+		\resumeSubheading
+			{Christ Nagar College}{Thiruvananthapuram, India}
+			{Graduation - Masters in Computer Applications;  GPA: 7.2}{June. 2014 - May. 2017}
+		\resumeSubheading
+			{Kendriya Vidyalaya AirForce Station Akkulam}{Thiruvananthapuram, India}
+			{High School - Computer Science}{April. 2012 - March. 2014}
+	\resumeSubHeadingListEnd
+
+%-----------Skills Summary-----------------
+\vspace{-5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+		\resumeSubItem{Languages}{~~~~~~Python, C-Shell, Embedded C++}
+		\resumeSubItem{Tools}{~~~~~~~~~~~~~~GIT, Docker, Docker-Compose, Postman, ICManage, Perforce Helix Core, LSF License Scheduler}
+		\resumeSubItem{Platforms}{~~~~~~~Linux, Arduino, Raspberry Pi, Autodesk Eagle, Fusion 360}
+	\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+	\resumeSubHeadingListStart
+		\resumeSubItem{Fingerprint based Exam Authentication System}{The Fingerprint Based Exam Authentication with Exam Management Automation is a hardware software combination for exam automation and student - teacher verification using fingerprint. The hardware is a handheld device used by the invigilator to authenticate invigilator himself and the students via their fingerprint to avoid the chances of student impersonation during exams. This project was developed as a part of final year project for the course.}
+		
+		\vspace{2pt}
+		\resumeSubItem{IOT Water Level Indicator}{The IOT Water Level Indicator is automated pump control for filling tank based on water level, run garden sprinkler system based on garden moisture level and run farm sprinkler system based on specific time. This project was developed for the department. This project has been done as my PG degree’s mini project and is available at \href{https://github.com/sashwat-project-hardware/iot-water-level-indicator}{Github: IOT Water Level Indicator}}
+		
+		\vspace{2pt}
+		\resumeSubItem{ATmega328p Production Ready Board}{The project contains the eagle files for an Arduino uno clone with small size. The design emphasises on production ready design. Users can design hats for the device. The board design is available for both normal and SMD package. The project is available at \href{https://github.com/sashwat-project-hardware/sph-mc-one}{GitHub: ATmega328p Production Ready Board}}
+		
+	\resumeSubHeadingListEnd
+
+%-----------Awards-----------------
+\vspace{-5pt}
+\section{Honors and Awards}
+	\begin{description}[font=$\bullet$]
+		\item {Star Performer, All India MCA Meet 2019, NIT Tiruchirappalli - Award for best overall performance}
+		\vspace{-5pt}
+		\item {Winner of Phoenix, All India MCA Meet 2019, NIT Tiruchirappalli - Award for best interview performance}
+		\vspace{-5pt}
+		\item {Winner of Technothon, All India MCA Meet 2019, NIT Tiruchirappalli - Hackathon Competition}
+		\vspace{-5pt}
+		\item {Winner of Quibble, All India MCA Meet 2019, NIT Calicut - Technical and Non Technical Quiz}
+	\end{description}
+
+%-----------Volunteer Experience-----------------
+% Commented
+\begin{comment}
+\vspace{-5pt}
+\section{Volunteer Experience}
+	\resumeSubHeadingListStart
+		\resumeSubheading
+			{Internet of Things Lab, College of Engineering Trivandrum}{Thiruvananthapuram, India}
+			{Took workshops on Arduino, Raspberry Pi, Beagle bone and Python.}{Oct 2018 - Apr 2020}
+			
+		\vspace{5pt}
     		\resumeSubheading
-      			{College of Engineering Trivandrum (CET)}{Thiruvananthapuram, India}
-     	 		{Post Graduation; Masters in Computer Application}{August. 2017 -- April. 2020}
-    		\resumeSubheading
-     			 {Christ Nagar College}{Thiruvananthapuram, India}
-      			{Graduation; Bachelor in Computer Application}{June. 2014 -- May. 2017}
-    		\resumeSubheading
-      			{Kendriya Vidyalaya AirForce Station Akkulam}{Thiruvananthapuram, India}
-      			{High School; Computer Science}{April. 2012 -- March. 2014}
-  \resumeSubHeadingListEnd
+			{RASA Hams - Ham radio community}{Thiruvananthapuram, India}
+			{Group of Ham radio operators / enthusiasts who united to learn Ham radios.}{Jan 2018 - Present}
+	\resumeSubHeadingListEnd
+\end{comment}
 
-%-----------Workshops Handled-----------------
-\section{Workshops Handled}
-  	\resumeSubHeadingListStart
-		\resumeSubheading
-     			{Git Workshop}{College of Engineering Trivandrum (CET), Thiruvananthapuram}
-      			{IEDC}{2020}
-      			\resumeItemListStart
-       				 \resumeItem{Git}
-          				{Introduction to version control, git commands etc.}
-      			\resumeItemListEnd
-		\resumeSubheading
-     			 {Git Workshop}{Muthoot Institute of Technology and Science, Kochi}
-      			{}{2019}
-     	 		\resumeItemListStart
-        				\resumeItem{Git}
-          				{In this workshop, I took session on Git and Github.}
-      			\resumeItemListEnd
-    		\resumeSubheading
-     			{Raspberry Pi Workshop}{College of Engineering Trivandrum (CET), Thiruvananthapuram}
-      			{IOT Lab}{2018}
-      			\resumeItemListStart
-       				 \resumeItem{Python}
-          				{Included libraries for working on GPIOs (RPi.GPIO, time and HTTP requests(python-requests)}
-      			\resumeItemListEnd
-      		\resumeSubheading
-      			{Arduino Workshop}{College of Engineering Trivandrum (CET), Thiruvananthapuram}
-     			{IOT Lab}{2018}
-      			\resumeItemListStart
-        				\resumeItem{Arduino}
-          				{Included working on libraries for using LCD, OLED, keypad etc.}
-     	 		\resumeItemListEnd
-      		\resumeSubheading
-     		 	{Beaglebone Workshop}{College of Engineering Trivandrum (CET), Thiruvananthapuram}
-      			{IOT Lab}{2018}
-      			\resumeItemListStart
-        				\resumeItem{Linux and Python}
-          				{Included Linux basics, Python basics and python libraries like handling Adafruit BBIO and time.}
-      			\resumeItemListEnd
-      		\resumeSubheading
-      			{Raspberry Pi Workshop}{College of Engineering Trivandrum (CET), Thiruvananthapuram}
-     			{Drishti}{2018}
-      			\resumeItemListStart
-        				\resumeItem{Pi}
-          				{This workshop was conducted at Drishti (Technical Fest, CET). The session included about introduction Raspberry Pi, Linux, working remotely, Python, creating Pi server and home automation using Pi.}
-      			\resumeItemListEnd
- 	 \resumeSubHeadingListEnd
+%-----------Workshops Hosted-----------------
+% Commented
+\begin{comment}
+\vspace{-5pt}
+\section{Workshops Hosted}
+	\begin{description}[font=$\bullet$]
+		\item {Git Workshop - College of Engineering Trivandrum}
+		\vspace{-5pt}
+		\item {Git Workshop - Muthoot Institute of Technology and Science, Kochi}
+		\vspace{-5pt}
+		\item {Raspberry Pi Workshop - IOT Lab, College of Engineering Trivandrum}
+		\vspace{-5pt}
+		\item {Arduino Workshop - IOT Lab, College of Engineering Trivandrum}
+		\vspace{-5pt}
+		\item {Beaglebone Workshop - IOT Lab, College of Engineering Trivandrum}
+		\vspace{-5pt}
+		\item {Raspberry Pi Workshop - Drishti Fest, College of Engineering Trivandrum}
+	\end{description}
+\end{comment}
 
-%-----------Achievements-----------------
-\section{Achievements}
-  	\resumeSubHeadingListStart
-		\resumeSubheading
-      			{HacktoberFest}{DigitalOcean and GitHub}
-      			{Online Event}{October 2018, 2019 \& 2020}
-			\resumeItemListStart
-      				\resumeItem{Online Event}
-          				{Make Minimum 4 pull requests}
-       			\resumeItemListEnd
-		\resumeSubheading
-      			{Ignite' 19}{NIT Suratkal}
-      			{All India MCA Meet}{October 2019}
-			\resumeItemListStart
-      				\resumeItem{Nexus - 1st prize}
-          				{Non - Technical, Team event - 5 members}
-       			\resumeItemListEnd
-		\resumeSubheading
-      			{Version' 19}{NIT Tiruchirappalli}
-      			{All India MCA Meet}{September 2019}
-			\resumeItemListStart
-      				\resumeItem{Technothon - 1st prize}
-          				{Project presentation event. (Individual event). The project is a solution to impersonation in exams using a device to authenticate users using their fingerprint, automation web based software for exam department and a mobile application for students to view exams rooms and attendance. The teachers can view their duty sheets. The project is developed using python (libraries involved requests, pymsql and fingerprint library), javascript (Electron, python-shell and mysql), docker, flutter and PHP.}
-				\resumeItem{Phoenix - 1st prize}
-          				{Interview competition for KLA's Internship. The participants are selected based on their overall performance in the whole event. (Individual event)}
-				\resumeItem{Star Performer}
-          				{Given for best performance in the 2 day event.}
-       			\resumeItemListEnd
-   		\resumeSubheading
-      			{Nakshatra' 19}{NIT Calicut}
-      			{All India MCA Meet}{February 2019}
-			\resumeItemListStart
-      				\resumeItem{Quibble - 1st prize}
-          				{Non - Technical quiz, Team event - 2 members}
-				\resumeItem{Enigma - 2nd prize}
-          				{Technical quiz, Team event - 2 members}
-       			\resumeItemListEnd
-  	\resumeSubHeadingListEnd
-
-%-----------MY PROJECTS-----------------
-\section{My Projects}
-  	\resumeSubHeadingListStart
-		\resumeSubItem{IOT Water Level Indicator}
-      			{ The IOT Water Level Indicator is automated pump control for filling tank based on water level, run garden sprinkler system based on garden moisture level and run farm sprinkler system based on specific time. This project was developed for the department. This project has been done as my PG degree's mini project and  is available at \url{https://github.com/sashuu6/cet-mca-s5-miniproject-iot_based_water_level_indicator}.}
-        		\resumeSubItem{vOne}
-      			{My version of Arduino Uno for board isolation. This project is available at \url{https://github.com/sashuu6/vOne}.}  	\resumeSubHeadingListEnd
-
-  
-%--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
-  	\resumeSubHeadingListStart
-    		\item{
-      			\textbf{Languages}{: Python, Go}
-      			\hfill
-      			\textbf{Technologies}{: Linux, Git, Docker-Compose, Perforce, ICManage}
-    		}
-		\item{
-      			\textbf{Softwares}{: Visual Studio Code, Arduino IDE}
-      			\hfill
-      			\textbf{Design Tools}{: Autodesk Eagle, Fusion 360}
-    		}
-  	\resumeSubHeadingListEnd
-
-%-------------------------------------------
 \end{document}
