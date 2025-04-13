@@ -15,16 +15,15 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
-\usepackage{verbatim} 
+\usepackage{verbatim}
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-%---------------
 \addtolength{\oddsidemargin}{-0.530in}
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
@@ -32,185 +31,163 @@
 \addtolength{\textheight}{1in}
 
 \urlstyle{rm}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
-%--------------------
+% Section formatting
 \titleformat{\section}{
-	\vspace{-10pt}\scshape\raggedright\large
+  \vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 % Custom commands
-%----------------
 \newcommand{\resumeItem}[2]{
-	\item\small{
-		\textbf{#1}{: #2 \vspace{-2pt}}
-	}
-}
-
-\newcommand{\resumeItemWithoutTitle}[1]{
-	\item\small{
-		{\vspace{-2pt}}
-	}
+  \item\small{\textbf{#1}{: #2 \vspace{-2pt}}}
 }
 
 \newcommand{\resumeSubheading}[4]{
-	\vspace{-1pt}\item
-	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-	\textbf{#1} & #2 \\
-	\textit{#3} & \textit{#4} \\
-	\end{tabular*}\vspace{-5pt}
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-
-%-----------------------------
-%%%%%%  CV STARTS HERE  %%%%%%
-
+%------------- CV STARTS HERE -------------
 \begin{document}
 
-%----------HEADING-----------------
+%---------- Heading ----------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-	\textbf{{\LARGE Sashwat K}} & Email: \href{mailto:}{hi@sashwat.in}\\
-	\href{https://sashwat.in}{Portfolio: sashwat.in}\\
-	 \href{https://github.com/sashuu69}{Github: ~~github.com/sashuu69} \\
+  \textbf{{\LARGE Sashwat K}} & Email: \href{mailto:hi@sashwat.in}{hi@sashwat.in} \\
+  \href{https://sashwat.in}{Portfolio: sashwat.in} & \href{https://github.com/sashuu69}{GitHub: github.com/sashuu69} \\
 \end{tabular*}
 
-%-----------Experience-----------------
+%---------- Profile ----------
+\section{Profile}
+Experienced systems engineer with a strong background in cloud infrastructure, automation, and confidential computing. Passionate about designing secure, scalable, and production-grade systems.
+
+%---------- Experience ----------
 \section{Experience}
-	\resumeSubHeadingListStart
-		\resumeSubheading
-			{IBM ISDL}{Hybrid}
-			{Senior Engineer (Full Time)}{Jul 2022 - Present}
-			\resumeItemListStart
-				\resumeItem
+    \resumeSubHeadingListStart
+	\resumeSubheading
+		{IBM ISDL}{Hybrid}
+		{Senior Engineer (Full Time)}{Jul 2022 - Present}
+		\resumeItemListStart
+			\resumeItem
 					{LinuxONE Baremetal on VPC in IBM Cloud Project}
 					{\linebreak Developed and maintained SLES and RHEL OS for LinuxONE Baremetal on VPC (Virtual Private Cloud) for IBM Cloud. \linebreak Developed and automated the building of OS images that supported zVSI (KVM on Z) and LPAR on IBM Cloud VPC. \linebreak Developed automation scripts for maintaining LinuxONE Baremetal. \linebreak Contributed to bringing SSC (Secure Service Container) on LinuxONE Baremetal on VPC.}
-				\resumeItem
+			\resumeItem
 					{HPVS (Hyper Protect Virtual Server) On-Prem and IBM Cloud Confidential Computing Project}
-					{Developed and maintained a Terraform provider for HPVS, supporting the latest releases for both on-prem and IBM Cloud. \linebreak Developed features like custom tags for HPVS logs to LogDNA for easier filtering and contract expiry settings for instances. \linebreak Developed scripts to automate manual release tasks, reducing manual effort. \linebreak Addressed customer issues related to the HPVS Terraform provider.}
-			\resumeItemListEnd
+					{Developed and maintained a Terraform provider for HPVS, supporting the latest releases for both on-prem and IBM Cloud. \linebreak Developed new systemd services and updated bootloader to add features like static IP, contract expiry and custom tags support in logs. \linebreak Developed scripts to automate manual release tasks to reducing manual effort. \linebreak Addressed customer issues related to the HPVS Terraform provider.}
+		\resumeItemListEnd
 
-		\vspace{+5pt}
-		\resumeSubheading
-			{AMD Inc.}{Hybrid}
-			{Silicon Design Engineer (Full Time)}{Feb 2022 - Jul 2022}
-			\resumeItemListStart
-				\resumeItem
+	\vspace{+5pt}
+	\resumeSubheading
+		{AMD Inc.}{Hybrid}
+		{Silicon Design Engineer (Full Time)}{Feb 2022 - Jul 2022}
+		\resumeItemListStart
+			\resumeItem
 					{AMD - Xilinx Integration}
 					{Help update infrastructure to help bring synergy between AMD and Xilinx systems Revision Control System, License Servers etc.}
-				\resumeItem
+			\resumeItem
 					{Programming}
 					{Developed and maintained scripts for maintaining ICManage servers (users, workspaces etc), FlexLM license files, benchmarking new servers}
-				\resumeItem
+			\resumeItem
 					{Collaboration}
 					{Delegate with Silicon Engineering teams and IT to complete projects.}
-			\resumeItemListEnd
+		\resumeItemListEnd
 
-		\vspace{+5pt}
-		\resumeSubheading
-			{Xilinx Inc. (Acquired by AMD Inc.)}{Hybrid}
-			{CAD Engineer (Full Time)}{Jul 2021 -  Feb 2022}
-			\resumeItemListStart
-				\resumeItem
+	\vspace{+5pt}
+	\resumeSubheading
+		{Xilinx Inc. (Acquired by AMD Inc.)}{Hybrid}
+		{CAD Engineer (Full Time)}{Jul 2021 -  Feb 2022}
+		\resumeItemListStart
+			\resumeItem
 					{Management}
 					{Implement policies for LSF queues and Storage.}
-				\resumeItem
+			\resumeItem
 					{Programming}
 					{Develop and maintain ICManage Library creation.}
-				\resumeItem
+			\resumeItem
 					{Documentation}
 					{Create, update and document processes using Jira and Confluence.}
-		\resumeItemListEnd
+	\resumeItemListEnd
 		
-		\vspace{+5pt}
-		\resumeSubheading
-			{Xilinx Inc. (Acquired by AMD Inc.)}{Hybdrid}
-			{CAD Infrastructure DevOps Engineer (Contractual)}{Jun 2020 -  Jul 2021}
-			\resumeItemListStart
-				\resumeItem
+	\vspace{+5pt}
+	\resumeSubheading
+		{Xilinx Inc. (Acquired by AMD Inc.)}{Hybrid}
+		{CAD Infrastructure DevOps Engineer (Contractual)}{Jun 2020 -  Jul 2021}
+		\resumeItemListStart
+			\resumeItem
 					{Programming}
 					{Developed and maintained script to maintain server netgroup files of hosts in LSF clusters.}
-				\resumeItem
+			\resumeItem
 					{Maintanence}
 					{Maintain ICManage GDP, LSF application profiles, LSF License Scheduler and EDA tools.}
-		\resumeItemListEnd
-	\resumeSubHeadingListEnd
+	\resumeItemListEnd
+    \resumeSubHeadingListEnd
 
-%-----------EDUCATION-----------------
-\vspace{-5pt}
+%---------- Education ----------
 \section{Education}
-	\resumeSubHeadingListStart
-		\resumeSubheading
-			{College of Engineering Trivandrum}{Thiruvananthapuram, India}
-			{Post Graduation - Master in Computer Applications;  GPA: 7.0}{August. 2017 - April. 2020}
-		\resumeSubheading
-			{Christ Nagar College}{Thiruvananthapuram, India}
-			{Graduation - Bachelor in Computer Applications;  GPA: 7.2}{June. 2014 - May. 2017}
-		\resumeSubheading
-			{Kendriya Vidyalaya AirForce Station Akkulam}{Thiruvananthapuram, India}
-			{High School - Computer Science}{April. 2012 - March. 2014}
-	\resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {College of Engineering Trivandrum}{Thiruvananthapuram, India}
+            {MCA; GPA: 7.0}{Aug 2017 -- Apr 2020}
+        \resumeSubheading
+            {Christ Nagar College}{Thiruvananthapuram, India}
+            {BCA; GPA: 7.2}{Jun 2014 -- May 2017}
+        \resumeSubheading
+            {Kendriya Vidyalaya AFS Akkulam}{Thiruvananthapuram, India}
+            {High School – Computer Science}{Apr 2012 -- Mar 2014}
+    \resumeSubHeadingListEnd
 
-%-----------Skills Summary-----------------
-\vspace{-5pt}
+%---------- Skills Summary ----------
 \section{Skills Summary}
-	\resumeSubHeadingListStart
-		\resumeSubItem{Languages}{~~~~~~Go, Python, Bash}
-		\resumeSubItem{Tools}{~~~~~~~~~~~~~~Git, Docker, Terraform, Ansible}
-		\resumeSubItem{Platforms}{~~~~~~~Linux}
-	\resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+        \resumeSubItem{Languages}{Go, Python, Bash, C, Data Structures and Algorithms}
+        \resumeSubItem{DevOps \& Tools}{Terraform, Docker, Git, Jenkins}
+        \resumeSubItem{Infra \& Platforms}{Linux, Systemd, IBM Cloud, LPAR, zVSI, z/VM}
+        \resumeSubItem{Concepts}{Virtualization, Confidential Computing, Infrastructure as Code (IaC)}
+    \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------------
-\vspace{-5pt}
+%---------- Projects ----------
 \section{Projects}
-	\resumeSubHeadingListStart
-		\resumeSubItem{Fingerprint-based Exam Authentication System}{The Fingerprint-based Exam Authentication with Exam Management Automation is a hardware-software combination for exam automation and student-teacher verification using fingerprint. The hardware is a handheld device used by the invigilator to authenticate the invigilator himself and the students via their fingerprint to avoid the chances of student impersonation during exams. This project was developed as a part of the final year project for the course.}
-		
-		\vspace{2pt}
-		\resumeSubItem{IOT Water Level Indicator}{The IOT Water Level Indicator is an automated pump control for filling tanks based on water level, running garden sprinkler system based on garden moisture level and running farm sprinkler system based on specific time. This project was developed for the department. This project has been done as my PG degree’s mini project and is available at \href{https://github.com/sashwat-project-hardware/iot-water-level-indicator}{Github: IOT Water Level Indicator}}
-		
-		\vspace{2pt}
-		\resumeSubItem{ATmega328p Production Ready Board}{The project contains the eagle files for an Arduino uno clone with a small size. The design emphasises on production-ready design. Users can design hats for the device. The board design is available for both normal and SMD packages. The project is available at \href{https://github.com/sashwat-project-hardware/sph-mc-one}{GitHub: ATmega328p Production Ready Board}}
-		
-	\resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+        \resumeSubItem
+            {Fingerprint-based Exam Authentication System}
+            {Biometric verification system to prevent impersonation in exams. Handheld Arduino-based device for authenticating students and invigilators.}
+        \resumeSubItem
+            {IoT Water Level Indicator}
+            {Automated tank and garden watering system using moisture sensors and NodeMCU. Available at \href{https://github.com/sashwat-project-hardware/iot-water-level-indicator}{GitHub}.}
+        \resumeSubItem
+            {ATmega328P Production-Ready Board}
+            {Compact Arduino UNO-compatible board (SMD and DIP) with Eagle design files. Available at \href{https://github.com/sashwat-project-hardware/sph-mc-one}{GitHub}.}
+    \resumeSubHeadingListEnd
 
-%-----------Awards-----------------
-\vspace{-5pt}
+%---------- Awards ----------
 \section{Honors and Awards}
-	\begin{description}[font=$\bullet$]
-		\item {Star Performer, All India MCA Meet 2019, NIT Tiruchirappalli - Award for best overall performance}
-		\vspace{-5pt}
-		\item {Winner of Phoenix, All India MCA Meet 2019, NIT Tiruchirappalli - Award for best interview performance}
-		\vspace{-5pt}
-		\item {Winner of Technothon, All India MCA Meet 2019, NIT Tiruchirappalli - Hackathon Competition}
-		\vspace{-5pt}
-		\item {Winner of Quibble, All India MCA Meet 2019, NIT Calicut - Technical and Non-Technical Quiz}
-	\end{description}
+    \begin{itemize}
+        \item Significant Contributor, TCAP (IBM) – Open source contributions
+        \item Star Performer, All India MCA Meet 2019 (NIT Trichy)
+    \end{itemize}
 
-%-----------Volunteer Experience-----------------
-\vspace{-5pt}
+%---------- Volunteer Experience ----------
 \section{Volunteer Experience}
-	\resumeSubHeadingListStart
-		\resumeSubheading
-			{Internet of Things Lab, College of Engineering Trivandrum}{Thiruvananthapuram, India}
-			{Took workshops on Arduino, Raspberry Pi, Beagle bone and Python.}{Oct 2018 - Apr 2020}
-			
-		\vspace{5pt}
-    		\resumeSubheading
-			{RASA Hams - Ham radio community}{Thiruvananthapuram, India}
-			{Group of Ham radio operators/enthusiasts who united to learn Ham radios.}{Jan 2018 - Present}
-	\resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {Internet of Things Lab, College of Engineering Trivandrum}{Thiruvananthapuram, India}
+        {Conducted workshops on Arduino, Raspberry Pi, BeagleBone, Python}{Oct 2018 -- Apr 2020}
+    \resumeSubheading
+        {RASA Hams - Ham Radio Community}{Thiruvananthapuram, India}
+        {Collaborated with local amateur radio enthusiasts for learning and experimentation}{Jan 2018 -- Present}
+    \resumeSubHeadingListEnd
 
 \end{document}
